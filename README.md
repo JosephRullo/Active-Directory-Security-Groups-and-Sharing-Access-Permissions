@@ -26,7 +26,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-**Note** This demo will utilize the Active Directory installation as well as the Domain Controller and Client Virtual Machines that were created in the previous tutorial. Please view it here for a full walkthrough. 
+**Note** This demo will utilize the Active Directory installation as well as the Domain Controller and Client Virtual Machines that were created in the previous tutorial. Please view it here for a full walkthrough (https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs).
 
 <h2>Step 1.</h2>
 <p> 
