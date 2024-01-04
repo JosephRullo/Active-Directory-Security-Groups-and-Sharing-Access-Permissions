@@ -26,21 +26,26 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-**Note** This demo will utilize the Active Directory installation as well as the Domain Controller and Client Virtual Machines that were created in the previous tutorial. Please view it here for a full walkthrough (https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs).
+** **Note:** ** This demo will utilize the Active Directory installation as well as the Domain Controller and Client Virtual Machines that were created in the previous tutorial. Please view it here for a full walkthrough (https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs).
 
 <h2>Step 1.</h2>
+
+**Connect/log into the Domain Controller as your Domain Admin Account.** Start by opening up Remote Desktop and connecting to the Domain Controller VM using the Admin account. Open Active Directory Users and Computers -> select a folder where Users are stored, in this example EMPLOYEES (this was the organizational unit that was created in the previous tutorial-see link above) -> select a User and double click -> go to the Account tab -> copy their User logon name. 
 <p> 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/m0uh01W.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/BQGKwCK.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> https://i.imgur.com/m0uh01W.png
 </p>
 <p>
 </p>
 <br />
 
-<h2>Step 2.</h2>
+<h2>Step 2.</h2> 
+
+**Connect/log into Client as a Normal User.** Now open another session of Remote Desktop and connect to the Client VM -> sign in with the User you just chose from Active Directory.
 <p> 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/LstElfn.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/JHjYifD.jpg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
