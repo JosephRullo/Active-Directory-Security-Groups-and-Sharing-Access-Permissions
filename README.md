@@ -98,7 +98,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 **Create a Security Group, Assign Permissions, an Test Access.** <p> Moving back to the Domain Controller VM, open Active Directory Users and Computers -> right click on your domain -> select new -> select organizational unit -> name it (for this example SECURITY GROUPS). Now right click on this new unit -> select New -> select Group -> assign it a name (in this example ACCOUNTANTS) -> check the "Security" button under "Group Type" -> click Ok. Open File Explorer and go to the C: drive -> right click on the ACCOUNTING folder -> select Properties -> click the Sharing tab -> click Share -> type the name of the Security Group (ex. ACCOUNTANTS) you created and click Add -> grant Read/Write access under Permission Level -> click Share -> click done. No one has access to this group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group. Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok. Now switch back to the Client VM and logoff (you must logoff and logon again to have these permissions take effect.) Log back on to the Client as the User you selected as a member -> open File Explorer -> go to the Domain path with the ACCOUNTING folder and try to open it and and create a new folder in it (ex. Receipts). No error messages should appear. Switch back to the Domain Controller VM and confirm that the new folder was created here as well. Congratulations! You have successfully given access/permissions and shared folders in Active Directory.
 <p> 
 <p>
-<img src="https://i.imgur.com/5ce67lp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/keLXJ3D.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/1YdWDCF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/q2wbr2Q.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/ksfuU6U.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/7BY7iG9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/MIzL8fK.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/TuoEmZW.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/eRrXgdt.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
