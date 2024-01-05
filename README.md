@@ -79,11 +79,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 5.</h2> 
 
-**Attempt to access file shares as a normal user.** <p> 
+**Attempt to access file shares as a normal user.** <p> Switching back to the Client VM signed in as a User (In this example Alice. A from the EMPLOYEES group) open the File Explorer and enter the folder path that was copied in the above step. You should now see the three folders that we shared access with in the Domain Controller. Double click on the READ_ACCESS folder, you will notice you can open and view it. However try to right click -> select new -> folder. Notice you will get a "Access Denied" message. Now go back and double click the WRITE_ACCESS folder. After it opens, right click and try to add a new folder (for example Documents). This time you'll notice that you can create a new folder since you were given write acces. This folder will now appear in the Domain Controller in the C: drive within the WRITE_ACCESS folder as you would expect (you can briefly switch back to the Domain VM and observe the change). Lastly go back and try to open the NO_ACCESS folder. Again you will receive a "Access Denied" message stating you do not have permission to view it.
 <p> 
 <p>
-<img src="https://i.imgur.com/5ce67lp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-
+<img src="https://i.imgur.com/JOIuVOw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2bml3HU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/JZytqKF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/Uth2fa3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/dB53lh0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/vJiLyEU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
