@@ -97,23 +97,42 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
-<h2>Step 5.</h2> 
+<h2>Step 7.</h2> 
 
-**Attempt to access file shares as a normal user.** <p> Switching back to the Client VM signed in as a User (In this example Alice. A from the EMPLOYEES group) open the File Explorer and enter the folder path that was copied in the above step. You should now see the three folders that we shared access with in the Domain Controller. Double click on the READ_ACCESS folder, you will notice you can open and view it. However try to right click -> select new -> folder. Notice you will get a "Access Denied" message. Now go back and double click the WRITE_ACCESS folder. After it opens, right click and try to add a new folder (for example Documents). This time you'll notice that you can create a new folder since you were given write acces. This folder will now appear in the Domain Controller in the C: drive within the WRITE_ACCESS folder as you would expect (you can briefly switch back to the Domain VM and observe the change). Lastly go back and try to open the NO_ACCESS folder. Again you will receive a "Access Denied" message stating you do not have permission to view it. You would need to logoff and logon as the Domain Admin to gain access to this folder. Give it a test.
+**Attempt to Access File Shares as a Normal User.** <p> Switching back to the Client VM signed in as a User (In this example Alice. A from the EMPLOYEES group) open the File Explorer and enter the folder path that was copied in the above step. You should now see the three folders that we shared access with in the Domain Controller. Double click on the READ_ACCESS folder, you will notice you can open and view it. However try to right click -> select new -> folder  (Notice you will get a "Access Denied" message)
 <p> 
 <p>
 <img src="https://i.imgur.com/JOIuVOw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/2bml3HU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/JZytqKF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<p>
+</p>
+<br />
+
+<h2>Step 8.</h2> 
+
+**Attempt to Access File Shares as a Normal User (continued).** <p> Now go back and double click the WRITE_ACCESS folder. After it opens, right click and try to add a new folder (for example Documents). This time you'll notice that you can create a new folder since you were given "Write" permission. This folder will now appear in the Domain Controller in the C: drive within the WRITE_ACCESS folder as you would expect (you can briefly switch back to the Domain VM and observe the change).
+<p> 
+<p>
 <img src="https://i.imgur.com/Uth2fa3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/dB53lh0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/vJiLyEU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
 <br />
 
-<h2>Step 6.</h2> 
+<h2>Step 9.</h2> 
+
+**Attempt to Access File Shares as a Normal User (continued).** <p> Lastly on the Client VM, go back and try to open the NO_ACCESS folder. Again you will receive a "Access Denied" message stating you do not have permission to view it. You would need to logoff and logon as the Domain Admin to gain access to this folder. Give it a test.
+<p> 
+<p>
+<img src="https://i.imgur.com/dB53lh0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 10.</h2> 
 
 **Create a Security Group, Assign Permissions, an Test Access.** <p> Moving back to the Domain Controller VM, open Active Directory Users and Computers -> right click on your domain -> select new -> select organizational unit -> name it (for this example SECURITY GROUPS). Now right click on this new unit -> select New -> select Group -> assign it a name (in this example ACCOUNTANTS) -> check the "Security" button under "Group Type" -> click Ok. Open File Explorer and go to the C: drive -> right click on the ACCOUNTING folder -> select Properties -> click the Sharing tab -> click Share -> type the name of the Security Group (ex. ACCOUNTANTS) you created and click Add -> grant Read/Write access under Permission Level -> click Share -> click done. No one has access to this group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group. Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok. Now switch back to the Client VM and logoff (you must logoff and logon again to have these permissions take effect.) Log back on to the Client as the User you selected as a member -> open File Explorer -> go to the Domain path with the ACCOUNTING folder and try to open it and and create a new folder in it (ex. Receipts). No error messages should appear. Switch back to the Domain Controller VM and confirm that the new folder was created here as well. Congratulations! You have successfully given access/permissions and shared folders in Active Directory.
 <p> 
