@@ -61,7 +61,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
-<h2>Step 3.</h2> 
+<h2>Step 4.</h2> 
 
 **Create Sample Folders From within the Domain Controller.** <p> Back at the Domain Controller VM, from the Start Menu open up the File Explorer -> go to This PC -> select the C: drive -> here right click and create a new folder -> name it READ_ACCESS. Repeat this and create three more folders named: WRITE_ACCESS, NO_ACCESS and ACCOUNTING for this example. Note these folder names are arbitrary and can be whatever you choose.
 <p> 
@@ -72,14 +72,25 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
-<h2>Step 4.</h2> 
+<h2>Step 5.</h2> 
 
-**Set Permissions for the “Domain Users” Group.** <p> Let's set the permissions for each of the folders that were just created in the C: drive and share them among the Users in Active Directory. We'll start with the "READ_ACCESS" folder -> right click on it and select "Poperties" -> select the "Sharing" tab -> click "Share" -> type "Domain Users" in the field -> click "Add" (Note the "Permission Level" that is set to the right of "Domain Users". It is set as "Read" this will give the User "Read Only" access aka the access to view the folder and it's contents). -> now click "Share". Note, after clicking share, a pop up window will appear showing the path to this folder within the Domain Controller. Copy this path as we will need it in the coming steps. Next up, for the "WRITE_ACCESS" folder right click -> Permissions -> Sharing tab -> click Share -> type Domain Users -> click Add -> this time change the "Permission Level" to "Read/Write" (This will grant the User the ability to not only view the folder, but also the access to "Write" inside of it and add files, change names, etc.) -> click Share. Finally perform the same steps for the NO_ACCESS folder, except add "Domain Admins" instead of "Domain Users" -> Change the Permission Level to "Read/Write" -> Share. (By sharing this NO_ACCESS folder to the Admins, the Users will not have any access to it (either read or write). Let's leave the "ACCOUNTING" folder as is for now, we will set different permissions for that in the coming steps.
+**Set Permissions for the “Domain Users” Group.** <p> Let's set the permissions for each of the folders that were just created in the C: drive and share them among the Users in Active Directory. We'll start with the "READ_ACCESS" folder -> right click on it and select "Poperties" -> select the "Sharing" tab -> click "Share" -> type "Domain Users" in the field -> click "Add" (Note the "Permission Level" that is set to the right of "Domain Users" is set as "Read". This will give the User "Read Only" access, the permission to view the folder and it's contents without the ability to modify them in any way). -> now click "Share". After clicking share, a pop up window will appear showing the path to this folder within the Domain Controller. Copy this path as we will need it in the coming steps. Next up, for the "WRITE_ACCESS" folder right click -> Permissions -> Sharing tab -> click Share -> type Domain Users -> click Add -> this time change the "Permission Level" to "Read/Write" (This will grant the User the access to not only view the folder, but also the permission to "Write" inside of it and add files, change names, etc.) -> click Share.
 <p> 
 <p>
 <img src="https://i.imgur.com/AIlVHIl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/i3AYyPR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/QqPNik2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 6.</h2> 
+
+**Set Permissions for the “Domain Users” Group (continued).** <p> Finally perform the same steps for the NO_ACCESS folder, except this time type "Domain Admins" in the field 
+-> click Add -> Change the Permission Level to "Read/Write" -> Share. (By sharing this NO_ACCESS folder to the Domain Admins only, the Users will not have any access to it (either read or write). Let's leave the "ACCOUNTING" folder as is for now, we will set different permissions for that in the coming steps.
+<p> 
+<p>
 <img src="https://i.imgur.com/d4qAVe9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
