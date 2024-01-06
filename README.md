@@ -29,17 +29,27 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 1.</h2>
 
-**Connect/log into the Domain Controller as your Domain Admin Account.** <p> Start by opening up Remote Desktop and connecting to the Domain Controller VM using the Admin account. Open Active Directory Users and Computers -> select a folder where Users are stored, in this example EMPLOYEES (this was the organizational unit that was created in the previous tutorial-see link above) -> select a User and double click -> go to the Account tab -> copy their User logon name. 
+**Connect/log into the Domain Controller as your Domain Admin Account.** <p> Start by opening up Remote Desktop and connecting to the Domain Controller VM using the Admin account.
 <p> 
 <p>
 <img src="https://i.imgur.com/m0uh01W.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 2.</h2>
+
+**Choose a User in Active Directory.** <p> Open Active Directory Users and Computers -> select a folder where Users are stored, in this example EMPLOYEES (this was the organizational unit that was created in the previous tutorial-see link above) -> select a User and double click -> go to the Account tab -> copy their User logon name and paswword.
+<p> 
+<p>
 <img src="https://i.imgur.com/BQGKwCK.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
 <br />
 
-<h2>Step 2.</h2> 
+<h2>Step 3.</h2> 
 
 **Connect/log into Client as a Normal User.** <p> Now open another session of Remote Desktop and connect to the Client VM -> sign in with the User you just chose from Active Directory.
 <p> 
