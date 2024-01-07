@@ -74,7 +74,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 5.</h2> 
 
-**Set Permissions for the “Domain Users” Group.** <p> Let's set the permissions for each of the folders that were just created in the C: drive and share them among the Users in Active Directory. We'll start with the "READ_ACCESS" folder -> right click on it and select "Poperties" -> select the "Sharing" tab -> click "Share" -> type "Domain Users" in the field -> click "Add" (Note the "Permission Level" that is set to the right of "Domain Users" is set as "Read". This will give the User "Read Only" access, the permission to view the folder and it's contents without the ability to modify them in any way). -> now click "Share". After clicking share, a pop up window will appear showing the path to this folder within the Domain Controller. Copy this path as we will need it in the coming steps. Next up, for the "WRITE_ACCESS" folder right click -> Permissions -> Sharing tab -> click Share -> type Domain Users -> click Add -> this time change the "Permission Level" to "Read/Write" (This will grant the User the access to not only view the folder, but also the permission to "Write" inside of it and add files, change names, etc.) -> click Share.
+**Set Sharing Permissions for the “Domain Users” Group.** <p> Let's set the permissions for each of the folders that were just created in the C: drive and share them among the Users in Active Directory. We'll start with the "READ_ACCESS" folder -> right click on it and select "Poperties" -> select the "Sharing" tab -> click "Share" -> type "Domain Users" in the field -> click "Add" (Note the "Permission Level" that is set to the right of "Domain Users" is set as "Read". This will give the User "Read Only" access, the permission to view the folder and it's contents without the ability to modify them in any way). -> now click "Share". After clicking share, a pop up window will appear showing the path to this folder within the Domain Controller. Copy this path as we will need it in the coming steps. Next up, for the "WRITE_ACCESS" folder right click -> Permissions -> Sharing tab -> click Share -> type Domain Users -> click Add -> this time change the "Permission Level" to "Read/Write" (This will grant the User the access to not only view the folder, but also the permission to "Write" inside of it and add files, change names, etc.) -> click Share.
 <p> 
 <p>
 <img src="https://i.imgur.com/AIlVHIl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -87,7 +87,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 6.</h2> 
 
-**Set Permissions for the “Domain Users” Group (continued).** <p> Finally perform the same steps for the NO_ACCESS folder, except this time type "Domain Admins" in the field 
+**Set Sharing Permissions for the “Domain Users” Group (continued).** <p> Finally perform the same steps for the NO_ACCESS folder, except this time type "Domain Admins" in the field 
 -> click Add -> Change the Permission Level to "Read/Write" -> Share. (By sharing this NO_ACCESS folder to the Domain Admins only, the Users will not have any access to it (either read or write). Let's leave the "ACCOUNTING" folder as is for now, we will set different permissions for that in the coming steps.
 <p> 
 <p>
@@ -145,7 +145,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 11.</h2> 
 
-**Assign Permissions to Security Group.** <p> Open File Explorer and go to the C: drive -> right click on the ACCOUNTING folder -> select Properties -> click the Sharing tab -> click Share -> type the name of the Security Group (ex. ACCOUNTANTS) you created and click Add -> grant Read/Write access under Permission Level -> click Share -> click done.
+**Assign Sharing Permissions to Security Group.** <p> Open File Explorer and go to the C: drive -> right click on the ACCOUNTING folder -> select Properties -> click the Sharing tab -> click Share -> type the name of the Security Group (ex. ACCOUNTANTS) you created and click Add -> grant Read/Write access under Permission Level -> click Share -> click done.
 <p> 
 <p>
 <img src="https://i.imgur.com/1YdWDCF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -156,7 +156,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 12.</h2> 
 
-**Assign  Member to Security Group.** <p> No one has access to this Security Group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group (for this example someone from EMPLOYEES). Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok.
+**Assign a Member to the Security Group.** <p> No one has access to this Security Group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group (for this example someone from EMPLOYEES). Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok.
 <p> 
 <p>
 <img src="https://i.imgur.com/ksfuU6U.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -179,4 +179,4 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
-<h2>Congratulations!</h2> You have successfully given access/permissions and shared folders in Active Directory.
+<h2>Congratulations!</h2> <p> You have successfully given access/permissions and shared folders in Active Directory!!!
