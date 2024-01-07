@@ -156,7 +156,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Step 12.</h2> 
 
-**Assign  Member to Security Group.** <p> No one has access to this Security Group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group (for this example someone from EMPLOYEES). Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok. Now switch back to the Client VM and logoff (you must logoff and logon again to have these permissions take effect.) Log back on to the Client as the User you selected as a member -> open File Explorer -> go to the Domain path with the ACCOUNTING folder and try to open it and and create a new folder in it (ex. Receipts). No error messages should appear. Switch back to the Domain Controller VM and confirm that the new folder was created here as well. Congratulations! You have successfully given access/permissions and shared folders in Active Directory.
+**Assign  Member to Security Group.** <p> No one has access to this Security Group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group (for this example someone from EMPLOYEES). Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok.
 <p> 
 <p>
 <img src="https://i.imgur.com/ksfuU6U.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -165,3 +165,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 </p>
 <br />
+
+<h2>Step 13.</h2> 
+
+**Test Access.** <p> Now switch back to the Client VM and logoff (you must logoff and logon again to have these permissions take effect.) Log back on to the Client VM as the User you selected as a member of the Security Group -> open File Explorer -> go to the Domain path with the ACCOUNTING folder and try to open it and and create a new folder in it (ex. Receipts). No error messages should appear. Switch back to the Domain Controller VM and confirm that the new folder was created here as well. 
+<p> 
+<p>
+<img src="https://i.imgur.com/hrAJXPO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/EOF5EVz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/aTT3uPH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Congratulations!</h2> You have successfully given access/permissions and shared folders in Active Directory.
