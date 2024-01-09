@@ -137,7 +137,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 **Create a Security Group.** <p> Moving back to the Domain Controller VM, open Active Directory Users and Computers -> right click on your domain -> select new -> select organizational unit -> name it (for this example SECURITY GROUPS). Now right click on this new unit -> select New -> select Group -> assign it a name (in this example ACCOUNTANTS) -> check the "Security" button under "Group Type" -> click Ok.
 <p> 
 <p>
-<img src="https://i.imgur.com/keLXJ3D.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/4XrbdIr.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
@@ -148,8 +148,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 **Assign Sharing Permissions to Security Group.** <p> Open File Explorer and go to the C: drive -> right click on the ACCOUNTING folder -> select Properties -> click the Sharing tab -> click Share -> type the name of the Security Group (ex. ACCOUNTANTS) you created and click Add -> grant Read/Write access under Permission Level -> click Share -> click done.
 <p> 
 <p>
-<img src="https://i.imgur.com/1YdWDCF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/q2wbr2Q.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/PVvPGZA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/Ln0ykSs.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <p>
 </p>
 <br />
@@ -159,7 +159,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 **Assign a Member to the Security Group.** <p> No one has access to this Security Group just yet, because we have not added any members to it. Let's do that now, first choose which User you will make a member of the Security Group (for this example someone from EMPLOYEES). Now go back to Active Directory Users and Computers -> go to the SECURITY GROUPS unit -> double click on ACCOUNTANTS group -> select the Members tab -> click Add -> type in the bottom field the name of the User you chose (for this example Grace. G) -> click Check Names -> click Ok -> click Apply -> click Ok.
 <p> 
 <p>
-<img src="https://i.imgur.com/ksfuU6U.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/xFEJOhK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/7BY7iG9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
