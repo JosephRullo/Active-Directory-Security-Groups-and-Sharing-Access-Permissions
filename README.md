@@ -1,10 +1,12 @@
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
+<img src="https://i.imgur.com/Q0kMemE.jpg" alt="ANSG"/>
+<img src="https://i.imgur.com/rCn2fyX.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
-
+<h1> <p align="center"> Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<p align="center"> In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<br />
+<br /> 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
@@ -179,4 +181,5 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
-<h2>Congratulations!</h2> <p> You have successfully given access/permissions and shared folders in Active Directory!!!
+<h2> <p align="center"> Congratulations!</h2> <p> 
+<p align="center"> You have successfully given access/permissions and shared folders in Active Directory!!!
