@@ -181,5 +181,4 @@
 </p>
 <br />
 
-<h2> <p align="center"> Congratulations!</h2> <p> 
-<p align="center"> You have successfully given access/permissions and shared folders in Active Directory!!!
+<h2> <p align="center"> Congratulations!!! You have successfully given access/permissions and shared folders in Active Directory! </h2>
