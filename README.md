@@ -171,9 +171,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 **Test Access.** <p> Now switch back to the Client VM and logoff (you must logoff and logon again to have these permissions take effect.) Log back on to the Client VM as the User you selected as a member of the Security Group -> open File Explorer -> go to the Domain path with the ACCOUNTING folder and try to open it and and create a new folder in it (ex. Receipts). No error messages should appear. Switch back to the Domain Controller VM and confirm that the new folder was created here as well. 
 <p> 
 <p>
-<img src="https://i.imgur.com/hrAJXPO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/EOF5EVz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/aTT3uPH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/2seg6vF.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/bj2Hi4V.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/q8OlhnP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
