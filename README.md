@@ -1,9 +1,9 @@
 <p align="center">
-<img src="https://i.imgur.com/Q0kMemE.jpg" alt="ANSG"/>
-<img src="https://i.imgur.com/rCn2fyX.png" alt="Traffic Examination"/>
+<img src="https://i.imgur.com/Q0kMemE.jpg" height=120% width=120% alt="ANSG"/>
 </p>
 
 <h1> <p align="center"> Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<p align="center"> <img src="https://i.imgur.com/rCn2fyX.png" alt="Traffic Examination"/>
 <p align="center"> In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 <br />
 <br /> 
