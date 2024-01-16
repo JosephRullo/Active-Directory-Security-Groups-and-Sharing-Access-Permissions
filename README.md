@@ -2,17 +2,15 @@
 <img src="https://i.imgur.com/Q0kMemE.jpg" height=120% width=120% alt="ANSG"/>
 </p>
 
-<h1> <p align="center"> Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<h1> <p align="center"> Network Security Groups (NSGs) Sharing Between Azure Virtual Machines</h1>
 <p align="center"> <img src="https://i.imgur.com/rCn2fyX.png" alt="Traffic Examination"/>
-<p align="center"> In this tutorial, we observe various network traffic to and from Azure Virtual Machines as well as experiment with Network Security Groups. <br />
+<p align="center"> In this tutorial, we observe sharing access to folders to and from Azure Virtual Machines as well as experiment with Network Security Groups. <br />
 <br />
 <br /> 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
 
 <h2>Operating Systems Used </h2>
 
@@ -44,7 +42,7 @@
 
 <h2>Step 2.</h2>
 
-**Choose a User in Active Directory.** <p> Open Active Directory Users and Computers -> select a folder where Users are stored, in this example EMPLOYEES (this was the organizational unit that was created in the previous tutorial-see link above) -> select a User and double click -> go to the Account tab -> copy their User logon name and paswword.
+**Choose a User in Active Directory.** <p> Open Active Directory Users and Computers -> select the folder where Users are stored, in this example EMPLOYEES (this was the organizational unit that was created in the previous tutorial-see link above) -> select a User and double click -> go to the Account tab -> copy their User logon name and paswword.
 <p> 
 <p>
 <img src="https://i.imgur.com/bCFjjgF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -183,4 +181,4 @@
 </p>
 <br />
 
-<h2> <p align="center"> Congratulations!!! You have successfully given access/permissions and shared folders in Active Directory! </h2>
+<h2> <p align="center"> This Concludes the Network Security Group Sharing Tutorial. </h2>
