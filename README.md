@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Q0kMemE.jpg" height=120% width=120% alt="ANSG"/>
 </p>
 
-<h1> <p align="center"> Network Security Groups (NSGs) Sharing Between Azure Virtual Machines</h1>
+<h1> <p align="center"> Network Security Groups (NSGs) and Sharing Access Between Azure Virtual Machines</h1>
 <p align="center"> <img src="https://i.imgur.com/rCn2fyX.png" alt="Traffic Examination"/>
 <p align="center"> In this tutorial, we observe sharing access to folders to and from Azure Virtual Machines as well as experiment with Network Security Groups. <br />
 <br />
