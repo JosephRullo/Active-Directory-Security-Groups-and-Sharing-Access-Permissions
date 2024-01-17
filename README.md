@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Q0kMemE.jpg" height=120% width=120% alt="ANSG"/>
+<img src="https://i.imgur.com/QpoJl8Y.png" height=120% width=120% alt="ANSG"/>
 </p>
 
 <h1> <p align="center"> Active Directory Security Groups and Sharing Access Permissions</h1>
