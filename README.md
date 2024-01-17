@@ -2,13 +2,14 @@
 <img src="https://i.imgur.com/Q0kMemE.jpg" height=120% width=120% alt="ANSG"/>
 </p>
 
-<h1> <p align="center"> Network Security Groups (NSGs) and Sharing Access Between Azure Virtual Machines</h1>
-<p align="center"> In this tutorial, we observe sharing access to folders to and from Azure Virtual Machines as well as experiment with Network Security Groups. <br />
+<h1> <p align="center"> Active Directory Security Groups and Sharing Access Permissions</h1>
+<p align="center"> In this tutorial, we observe sharing access to folders to and from Azure Virtual Machines as well as experiment with Security Groups within Active Directory. <br />
 <br />
 <br /> 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Active Directory
 - Remote Desktop
 
 <h2>Operating Systems Used </h2>
