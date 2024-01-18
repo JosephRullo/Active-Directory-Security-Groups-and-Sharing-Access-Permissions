@@ -27,7 +27,7 @@
 
 ** **Note:** ** This demo will utilize the Active Directory installation as well as the Domain Controller and Client Virtual Machines that were created in the previous tutorial. Please view it here for a full walkthrough.
 <p>
-(https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs).
+https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blob/main/README.md
 
 <h2>Step 1.</h2>
 
