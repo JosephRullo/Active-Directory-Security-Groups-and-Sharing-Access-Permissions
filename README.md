@@ -181,4 +181,4 @@ https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blo
 </p>
 <br />
 
-<h2> <p align="center"> This Concludes the Network Security Group Sharing Tutorial. </h2>
+<h2> <p align="center"> This Concludes the Active Directory Sharing Permissions Tutorial. </h2>
